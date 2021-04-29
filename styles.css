@@ -2,6 +2,8 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+
+   
      
  
 }
@@ -36,20 +38,25 @@ nav li
 display: flex;
 margin-left: 60px;
    
-   
 }
- a 
+
+nav li:hover
+{
+    color: #0065fc;
+    border-top:2px #0065fc solid;
+}
+
+nav a 
+
  {
      text-decoration: none;
+
  }
-  nav a:hover
- {
-    color: #0065fc;
-    
-    border-top:3px #0065fc solid;
-    
- }
-/* *************************recherche********************* */
+
+
+
+    /* *************************recherche********************* */
+
 #localisation
 {
    display: flex;
@@ -57,6 +64,7 @@ margin-left: 60px;
     margin-left: -60px;
     margin-top: 35px;
     margin-bottom: 35px;
+    
     
 
    
@@ -66,10 +74,10 @@ margin-left: 60px;
     background-color: #f2f2f2;
     border-color:#f2f2f2;
     border-radius: 15px 0px 0px 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     margin-left: 60px;
 }
 #recherche
@@ -83,7 +91,8 @@ margin-left: 60px;
     padding-left: 15px;
     padding-right: 20px;
     font-weight: bolder;
-    font-size:20px ;
+    font-size:20px;
+    color: black;
     
 }
 
@@ -92,14 +101,18 @@ margin-left: 60px;
     background-color: #0065fc;
     border: #f2f2f2;
     border-radius: 0px 15px 15px 0px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     color: white;
+    font-size: 15px;
+    
 }
 #titrefiltre
 {
-font-size:20px ;
+font-size:20px;
+font-weight: bolder;
 
 }
 
@@ -124,35 +137,48 @@ li
     
  }
     
-
+.li:hover
+{
+    background-color: #0065fc;
+    color: white;
+}
 
 .li
 {
     
     border: #f2f2f2 solid;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: width 10px; 
+    border-radius: 30px;
+    border-width:  3px; 
     font-weight: bolder;
     display: flex;
     align-items: center;
     padding-left: 30px;
     padding-right: 10px;
+    height: 38px;
+    
+    
+    
+
+
+    
 
 }
 .fa-li
 {
     
     border: white;
-    border-radius:100px;
+    border-radius: 50%;
     background-color:#deebff ;
     color: #0065fc;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    
+    
+    
    
    
 }
@@ -160,25 +186,39 @@ li
 {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+
    
   
 
 }
 #p2
 {
-   
-margin-left: 20px;
+    display: flex;  
+    align-items: center;
+    margin-left: 15px;
+    font-size: 18px;
+    
+
+
 }
 #logoinfo
 {
     color: #0065fc;
     border:2px  #f2f2f2 solid;
     border-radius: 50%;
-   width: 20px;
-   height: 20px;
+   width: 22px;
+   height: 22px;
     display: flex;
    align-items: center;
    justify-content: center;
-   
+   }
 
-}
+   
+   
+   
+   
+   a
+   {
+       text-decoration: none;
+   }
