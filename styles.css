@@ -353,7 +353,8 @@ flex-wrap: wrap;
        }
        .titrephoto
        {
-           padding: 1px;
+           
+
        }
 
        .afficher
@@ -384,6 +385,13 @@ flex-wrap: wrap;
           
            
 
+       }
+
+       #titrepopulaire
+       {
+           display: flex;
+           justify-content: space-between;
+           
        }
        .sousaside
        {
@@ -435,6 +443,7 @@ flex-wrap: wrap;
          
            
        }
+
        
     
            
@@ -445,7 +454,7 @@ flex-wrap: wrap;
     {
         justify-content: space-between;
         align-content: space-between;
-        align-items: center;
+        
     }
     article
     {
@@ -463,36 +472,35 @@ flex-wrap: wrap;
        font-size: 20px; 
        font-weight: bolder;
        margin-left: 30px;
-       padding-left: 30px;
+       
     }
     
     
     
-    #sousactivites1
+    #sousactivites
     {
         display: flex;
         flex-direction: row;
         align-content: space-between;
         justify-content: space-between;
-        margin-left: 30px;
-        margin-right: 30px;
+        width: 100%;
         
-        
-        
-      
 
+        
     }
+
+
     #sousactivites2
     {
         display: flex;
         flex-direction: column;
-        margin-left: 30px;
         align-content: space-between;
         justify-content: space-between;
+        width: 20%;
     
     }
 
-    h4 
+    .titrephotoactivites
     {
         font-size: 15px;
         margin-left: 20px;
@@ -528,7 +536,7 @@ flex-wrap: wrap;
     {
         
         height: 570px;
-        width: 80%;
+        width: 20%;
         border-radius: 15px;
         margin-left: 30px;
         box-shadow: 2px 2px 10px gray;
@@ -562,6 +570,7 @@ flex-wrap: wrap;
         flex-direction: column;
         align-content: space-between;
         justify-content: space-between;
+        width: 20%;
         
     }
     .photo4
@@ -592,7 +601,7 @@ flex-wrap: wrap;
     {
         border-radius:15px ;
         box-shadow: 2px 2px 10px gray;
-        width: 90%;
+        width: 20%;
         height: 570px;
         
        
