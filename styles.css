@@ -2,55 +2,61 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    
     font-size: 15px;
+    margin: 0;
     
-    text-align: justify;
     
-    
-}
-
-
-#section1 
-{
-    display: flex;
     
 }
 
 
 
-#entete
-{
-    display:flex ;
-    justify-content:space-between ;
-    
-   
-    
-    
-}
+
+
+
 header
 {
+    display:flex ;
+    
+    justify-content: space-between;
 
-text-align: justify;
-margin-right: 30px;
-margin-left: 30px;
+    margin-left: 30px;
+    
+    
+    
+}
+
+#logo
+{
 
 }
+
 
 
 
 /* ****************** navigation******************** */
 
 
-nav 
+
+nav
 {
-    list-style-type: none;
+
     display: flex;
-    width: 20%;
     justify-content: space-around;
+    width: 25%;  
     
     
+     
 } 
+    
+nav a
+{
+text-decoration: none;
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+    
+}
 
 
 
@@ -65,23 +71,11 @@ border-top: #0065fc solid 2px;
 }
 
 
-nav a 
-
-{
-     text-decoration: none;
-     display: flex;
-     align-items: flex-end;
-     justify-content: space-around;
-     
-    
- }
-
-
-
- #inscrire
+#inscrire
  
  {
 color: #0065fc;
+
 
  }
 
@@ -97,8 +91,16 @@ color: #0065fc;
 
 
     /* *************************RECHERCHE********************* */
+#section1
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
 
-#localisation
+    #localisation
+
 {
    display: flex;
    
@@ -177,6 +179,7 @@ font-weight: bolder;
 {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 
     
 }
@@ -274,10 +277,14 @@ li
    }
  
    /* ****************************HEBERGEMENTS************************** */
-#section1
+#section2
 {
-    height: 800px;
+    
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
     
 }
 
@@ -285,12 +292,11 @@ li
 {
 
     width:65%;
-    height:800px;
+    
     background-color: #f2f2f2;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     margin-left: 30px;
@@ -326,7 +332,7 @@ li
        align-content: space-between;
        justify-content: space-between;
        flex-wrap: wrap;
-    
+       height: 100%;
        
        
       
@@ -344,7 +350,7 @@ li
         justify-content: space-between;
         width: 25%;
         height: 280px;
-        flex-wrap: wrap;
+        min-width: 200px;
        
         
         
@@ -405,14 +411,17 @@ li
        {
            display: flex;
            flex-direction: column;
-           width: 25%;
-           height: 800px;
+           
+           
            align-content: space-between;
            justify-content: space-between;
            background-color: #f2f2f2;
            border-radius: 15px;
+           margin-left: 30px;
            margin-right: 30px;
            align-items: center;
+           padding-left: 80px;
+           padding-right: 80px;
            
            
            
@@ -455,7 +464,8 @@ li
             align-content: space-between;
             justify-content:space-between;
             padding-bottom: 25px;
-            height: 700px; 
+            height: 100%; 
+            
             
 
            
@@ -516,11 +526,12 @@ li
     
        
     /* **************************ACTIVITES A MARSEILLE********************* */ 
-    section
+    #section3
     {
         justify-content: space-between;
         align-content: space-between;
         display: flex;
+        
         
         
         
@@ -560,7 +571,7 @@ li
     }
 
 
-    #sousactivites2
+    #sousactivites1
     {
         display: flex;
         flex-direction: column;
@@ -644,7 +655,7 @@ li
     }
 
 
-    #sousactivites3
+    #sousactivites2
     {
         display: flex;
         flex-direction: column;
@@ -751,24 +762,60 @@ footer li
 
 @media screen and (max-width: 1024px) 
 {
- #bloc
+ header
  {
-    width: 900px;
+   border-bottom: #f2f2f2 solid 2px; 
+    
  }
+ #section2 
+ {
+   flex-wrap: wrap-reverse; 
+ }
+
+
 nav
 {
-    width: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}   
+.navhebergements
+{
+    width: 50%;
 
-}    
+} 
+.navactivites
+{
+    width: 50%;
+}
 #inscrire
 {
-    position: fixed;
+    position: absolute;
+    top: 15px;
+    right: 25px;
 }
 .fa-ul
 {
     display: flex;
     flex-wrap: wrap;
 }
+#hebergements
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+     width: 100%;
 
 
+}
+#lespluspopulaires
+{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sousaside
+{
+    flex-direction: row;
 }
