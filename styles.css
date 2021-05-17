@@ -18,6 +18,7 @@ header
 {
     display:flex ;
     
+    
     justify-content: space-between;
 
     margin-left: 30px;
@@ -29,6 +30,7 @@ header
 #logo
 {
 
+width: 0;
 }
 
 
@@ -44,7 +46,7 @@ nav
     display: flex;
     justify-content: space-around;
     width: 25%;  
-    
+    align-content: center;
     
      
 } 
@@ -55,7 +57,7 @@ text-decoration: none;
 display: flex;
 align-items: flex-end;
 justify-content: space-around;
-    
+
 }
 
 
@@ -461,9 +463,8 @@ li
             display: flex;
             flex-direction: column;
             align-items: center;
-            align-content: space-between;
-            justify-content:space-between;
-            padding-bottom: 25px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
             height: 100%; 
             
             
@@ -480,7 +481,8 @@ li
            display: flex;
            flex-direction: row;
            height: 170px;
-           width: 450px;
+           width: 420px;
+           margin-bottom: 30px;
            
 
          }
@@ -759,6 +761,19 @@ footer li
 {
     margin-bottom: 10px;
 }
+@media screen and (max-width :1550px) 
+{
+  #hebergements
+  {
+      padding-left: 20px;
+      padding-right: 20px;
+  } 
+  #lespluspopulaires
+  {
+      padding-left: 20px;
+      padding-right: 20px;
+  } 
+}
 
 @media screen and (max-width: 1024px) 
 {
@@ -807,6 +822,7 @@ nav
     display: flex;
     flex-wrap: wrap;
      width: 100%;
+   margin-right: 30px; 
 
 
 }
@@ -818,4 +834,63 @@ nav
 .sousaside
 {
     flex-direction: row;
+    justify-content: center;
+}
+.cartepopulaires
+{
+    margin-left: 10px;
+    
+}
+.sousarticle
+{
+    display: flex;
+    height: auto;
+
+}
+.carte
+{
+    width: 45%;
+}
+#filtre
+{
+    display:block;
+}
+.fa-ul
+{
+    flex-wrap: nowrap;
+    margin-left: 0px;
+}
+.li
+{
+    margin-left: 0px;
+    margin-right: 20px;
+}
+#sousactivites
+{
+    height: 100%;
+}
+#carteport
+{
+    width: 45%;
+    margin-bottom: 30px;
+}
+#sousactivites1
+{
+    width: 45%;
+    margin-right: 30px;
+}
+#cartecalanque
+{
+    width: 45%;
+    margin-left: 30px;
+}
+#sousactivites2
+{
+    width: 45%;
+}
+.iconpopulaire
+{
+    padding-left: 510px;
+}
+
 }
