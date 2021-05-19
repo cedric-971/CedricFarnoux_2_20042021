@@ -352,8 +352,9 @@ li
         justify-content: space-between;
         width: 25%;
         height: 280px;
-        min-width: 200px;
-       
+        min-width: 230px;
+        box-shadow: 2px 2px 10px gray;
+
         
         
     }
@@ -414,7 +415,7 @@ li
            display: flex;
            flex-direction: column;
            
-           
+           width: 30%;
            align-content: space-between;
            justify-content: space-between;
            background-color: #f2f2f2;
@@ -468,6 +469,7 @@ li
             height: 100%; 
             
             
+            
 
            
         }
@@ -483,7 +485,8 @@ li
            height: 170px;
            width: 420px;
            margin-bottom: 30px;
-           
+           box-shadow: 2px 2px 10px gray;
+
 
          }
          
@@ -553,7 +556,7 @@ li
         justify-content: space-between;
         align-content: space-between;
         margin-top: 50px;
-       
+       width: 100%;
     }
     
     
@@ -564,7 +567,6 @@ li
         flex-direction: row;
         align-content: space-between;
         justify-content: space-between;
-        width: 100%;
         flex-wrap: wrap;
         
         
@@ -596,6 +598,7 @@ li
         font-size: 15px;
         margin-left: 20px;
         font-weight: bolder;
+        
         
     }
     .photo1
@@ -761,7 +764,7 @@ footer li
 {
     margin-bottom: 10px;
 }
-@media screen and (max-width :1550px) 
+@media screen and (max-width :1600px) 
 {
   #hebergements
   {
@@ -772,15 +775,133 @@ footer li
   {
       padding-left: 20px;
       padding-right: 20px;
+      width: 35%;
+  }
+  .titrepopulaire
+  {
+      font-size: 18px;
   } 
+  .titrehebergements
+  {
+      font-size: 18px;
+  }
+  .titrephoto
+  {
+      font-size: 15px;
+  }
+  .tarif
+  {
+      font-size: 13px;
+  }
+  .lien-filtre
+  {
+      font-size: 16px;
+  }
+  .carte
+  {
+      min-width: 200px;
+      height: 240px;
+  }
+  .photo
+  {
+      height: 150px;
+  }
+  .textphoto
+  {
+     width: 200px;
+  }
+  .cartepopulaires
+  {
+      width: 380px;
+  }
+}
+@media screen and (max-width: 1250px) {
+    .carte
+    {
+        width: 45%;
+    }
+    #lespluspopulaires
+    {
+        width: 40%;
+    }
+    #sousactivites
+    {
+        height: 420px;
+    }
+    #sousactivites1
+    {
+        height: 420px;
+    }
+    #sousactivites2
+    {
+        height: 420px;
+    }
+    .li
+    {
+        margin-left: 20px;
+    }
+    .titrepopulaire
+    {
+        margin-right: 200px;
+    }
+    .photo1
+    {
+        height: 370px;
+    }
+    #carteport
+    {
+        height:  420px;
+    }
+    .photo2
+    {
+        height: 150px;
+    }
+    #cartefort
+    {
+        height: 200px;
+    }
+    .photo3
+    {
+        height: 150px;
+    }
+    #cartefrioul
+    {
+        height: 200px;
+    }
+    .photo4
+    {
+        height: 370px;
+    }
+    #cartecalanque
+    {
+        height: 420px;
+    }
+    .photo5
+    {
+        height: 150px;
+    }
+    #cartenotredame
+    {
+        height: 200px;
+    }
+    .photo6
+    {
+        height: 150px;
+    }
+    #cartelongchamp
+    {
+        height: 200px;
+    }
+    
 }
 
-@media screen and (max-width: 1024px) 
+
+@media screen and (max-width: 1030px) 
 {
  header
  {
    border-bottom: #f2f2f2 solid 2px; 
-    
+   margin-left: 0; 
  }
  #section2 
  {
@@ -794,22 +915,37 @@ nav
     display: flex;
     flex-wrap: wrap-reverse;
     margin-top: 80px;
-    margin-bottom: 80px;
+    
 }   
 .navhebergements
 {
     width: 50%;
+    padding-bottom: 20px;
+    border-top: transparent solid 2px;
+    border-bottom: transparent solid 2px;
 
 } 
 .navactivites
 {
     width: 50%;
+    padding-bottom: 20px;
+    border-top: solid transparent 2px;
+    border-bottom: solid transparent 2px;
+}
+nav a:hover
+{
+    border-top: transparent 2px solid;
+    border-bottom: #0065fc 2px solid;
 }
 #inscrire
 {
     position: absolute;
     top: 15px;
     right: 25px;
+}
+#logo
+{
+    margin-left: 25px;
 }
 .fa-ul
 {
@@ -831,6 +967,10 @@ nav
     width: 100%;
     margin-bottom: 30px;
 }
+.textphoto
+{
+    width: 150px;
+}
 .sousaside
 {
     flex-direction: row;
@@ -839,6 +979,7 @@ nav
 .cartepopulaires
 {
     margin-left: 10px;
+    width: 310px;
     
 }
 .sousarticle
@@ -849,7 +990,7 @@ nav
 }
 .carte
 {
-    width: 45%;
+    width: 25%;
 }
 #filtre
 {
@@ -857,13 +998,14 @@ nav
 }
 .fa-ul
 {
-    flex-wrap: nowrap;
+    
     margin-left: 0px;
 }
 .li
 {
     margin-left: 0px;
     margin-right: 20px;
+    margin-top: 10px;
 }
 #sousactivites
 {
@@ -890,7 +1032,130 @@ nav
 }
 .iconpopulaire
 {
-    padding-left: 510px;
+    padding-left: 280px;
 }
 
+}
+@media screen and (max-width: 800px){
+    .rechercher
+    {
+        display: none;
+    }
+    .fa-search
+    {
+        display: initial;
+    }
+    #textrecherche
+    {
+        font-size: 16px;
+    }
+    #lespluspopulaires
+    {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: initial;
+    }
+    #hebergements
+    {
+        background-color: white;
+    }
+    .iconpopulaire
+    {
+        padding-left: 150px;
+    }
+    .carte
+    {
+        width: 45%;
+    }
+    .photo1
+    {
+        height: 200px;
+    }
+    #carteport
+    {
+        height: 250px;
+        width: 45%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .photo2
+    {
+        height: 200px;
+    }
+    #cartefort
+    {
+        height: 250px;
+        width: 45%;
+    }
+    .photo3
+    {
+        height: 200px;
+    }
+    #cartefrioul
+    {
+        height: 250px;
+        width: 45%;
+        margin-bottom: 20px;
+
+    }
+    .photo4
+    {
+        height:200px ;
+    }
+    #cartecalanque
+    {
+        height: 250px;
+        width: 45%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .photo5
+    {
+        height: 200px;
+    }
+    #cartenotredame
+    {
+        height: 250px;
+        width: 45%;
+    }
+    .photo6
+    {
+        height: 200px;
+    }
+    #cartelongchamp
+    {
+        height: 250px;
+        width: 45%;
+    }
+    #activites
+    {
+        display: block;
+        height: 100%;
+    }
+    #sousactivites
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #sousactivites1
+    {
+        display: contents;
+    }
+    #sousactivites2
+    {
+        display: contents;
+    }
+    footer
+    {
+        width:100%;
+    }
+    .foot
+    {
+        width: 100%;
+    }
+
+
+    
 }
