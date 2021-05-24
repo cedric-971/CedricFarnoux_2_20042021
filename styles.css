@@ -60,25 +60,31 @@ justify-content: space-around;
 
 }
 
-
-
-
-nav a:hover
-{
-   
-color:#0065fc;
-border-top: #0065fc solid 2px;
-    
-    
-}
-
-
 #inscrire
  
  {
 color: #0065fc;
 
 
+ }
+
+ .navhebergements
+ {
+     width: 150px;
+ }
+ .navhebergements:hover
+ {
+     color: #0065fc ;
+     border-top:#0065fc solid 2px ;
+ }
+ .navactivites
+ {
+     width: 130px;
+ }
+ .navactivites:hover
+ {
+     color: #0065fc;
+    border-top: #0065fc solid 2px;
  }
 
  
@@ -353,11 +359,15 @@ li
         width: 25%;
         height: 280px;
         min-width: 230px;
-        box-shadow: 2px 2px 10px gray;
+        box-shadow: 2px 2px 10px 2px rgba(220,220,220) ;
+        transition: 0.5s;
 
-        
-        
     }
+    .carte:hover
+    {
+        transform: scale(1.05);
+    }
+
     .etoiles
     {
         display: flex;
@@ -414,7 +424,6 @@ li
        {
            display: flex;
            flex-direction: column;
-           
            width: 30%;
            align-content: space-between;
            justify-content: space-between;
@@ -427,21 +436,14 @@ li
            padding-right: 80px;
            
            
-           
-           
-           
-           
-          
-           
+        }
 
-       }
-
-       #titrepopulaire
+         #titrepopulaire
        {
            display: flex;
            flex-direction: row;
-           
-           
+           justify-content: space-between;
+           width: 100%;
            
         
            
@@ -451,7 +453,7 @@ li
        {
           font-size: 20px; 
           font-weight: bolder;
-          margin-right: 210px;
+          
           
           
           
@@ -467,7 +469,7 @@ li
             margin-bottom: 10px;
             flex-wrap: wrap;
             height: 100%; 
-            
+            justify-content: space-around;
             
             
 
@@ -484,21 +486,21 @@ li
            flex-direction: row;
            height: 170px;
            width: 420px;
-           margin-bottom: 30px;
-           box-shadow: 2px 2px 10px gray;
+            box-shadow: 2px 2px 10px 2px rgb(220,220, 220);
+           transition: 0.5s;
+        }
 
+       .cartepopulaires:hover
 
-         }
-         
-         
-            
-             
-         
-
-       .photopopulaires
        {
-        
-       
+        transform: scale(1.05);   
+       }
+
+
+        .photopopulaires
+
+       {
+
         width: 160px;
         height: 100%;
         border-radius: 15px 0 0 15px;
@@ -521,7 +523,7 @@ li
        .iconpopulaire
        {
       
-          margin-top: 25px;
+          margin-top: 20px;
            
        }
        
@@ -538,9 +540,8 @@ li
         display: flex;
         
         
-        
-        
     }
+
     article
     {
         justify-content: space-between;
@@ -568,9 +569,6 @@ li
         align-content: space-between;
         justify-content: space-between;
         flex-wrap: wrap;
-        
-        
-
         
     }
 
@@ -634,8 +632,12 @@ li
         width: 22%;
         border-radius: 15px;
         margin-left: 30px;
-        box-shadow: 2px 2px 10px gray;
-        
+        box-shadow: 2px 2px 10px 2px rgba(220,220,220) ;
+        transition: 0.5s;
+    }
+    #carteport:hover
+    {
+        transform: scale(1.05);
     }
 
     #cartefort
@@ -644,21 +646,29 @@ li
         border-radius: 15px;
         width: 100%;
         height: 280px;
-        box-shadow: 2px 2px 10px gray;
-        
+        box-shadow: 2px 2px 10px 2px rgba(220,220,220) ;
+        transition: 0.5s;
 
     }
+    #cartefort:hover
+    {
+        transform: scale(1.05);
+    }
+
     #cartefrioul
     {
         
         border-radius: 15px;
         width: 100%;
         height: 230px;
-        box-shadow: 2px 2px 10px gray;
-        
+        box-shadow: 2px 2px 10px 2px rgba(220,220,220) ;
+        transition: 0.5s;
 
     }
-
+    #cartefrioul:hover
+    {
+        transform: scale(1.05);   
+    }
 
     #sousactivites2
     {
@@ -699,33 +709,43 @@ li
     #cartecalanque
     {
         border-radius:15px ;
-        box-shadow: 2px 2px 10px gray;
+        box-shadow: 2px 2px 10px 2px  rgba(220,220,220);
         width: 22%;
         height: 550px;
-        
+        transition: 0.5s;
+    }
 
-        
+    #cartecalanque:hover
+    {
+        transform: scale(1.05);   
     }
 
     #cartenotredame
     {
         border-radius: 15px;
-        box-shadow: 2px 2px 10px gray;
+        box-shadow: 2px 2px 10px 2px  rgba(220,220,220);
         height: 240px;
-        
-
-       
+        transition: 0.5s;
     }
+
+    #cartenotredame:hover
+    {
+        transform: scale(1.05);   
+    }
+
     #cartelongchamp
     {
         border-radius: 15px;
-        box-shadow: 2px 2px 10px gray;
+        box-shadow: 2px 2px 10px 2px  rgba(220,220,220);
         height: 270px;
+        transition: 0.5s;
         
-
-        
-
     }
+    #cartelongchamp:hover
+    {
+        transform: scale(1.05);
+    }
+
     
 
     
@@ -733,14 +753,13 @@ li
 
 /* *************************footer************************ */
 
-#footer
+footer
 {
     display: flex;
-    
     align-content: space-between;
     background-color: #f2f2f2;
     margin-top: 50px;
-    height:
+    
    
 
 }
@@ -749,14 +768,12 @@ li
  font-weight: bolder;
  line-height: 50px;
  
- 
-
 }
+
 .foot
 {
     display: flex;
     width: 30%;
-    
     
 }
 
@@ -764,6 +781,9 @@ footer li
 {
     margin-bottom: 10px;
 }
+
+/* ***********grands ecrans************* */
+
 @media screen and (max-width :1600px) 
 {
   #hebergements
@@ -777,11 +797,19 @@ footer li
       padding-right: 20px;
       width: 35%;
   }
+  .titreactivites
+  {
+      font-size: 18px;
+  }
   .titrepopulaire
   {
       font-size: 18px;
   } 
   .titrehebergements
+  {
+      font-size: 18px;
+  }
+  .afficher
   {
       font-size: 18px;
   }
@@ -840,10 +868,7 @@ footer li
     {
         margin-left: 20px;
     }
-    .titrepopulaire
-    {
-        margin-right: 200px;
-    }
+    
     .photo1
     {
         height: 370px;
@@ -894,7 +919,7 @@ footer li
     }
     
 }
-
+/* **************tablettes************** */
 
 @media screen and (max-width: 1030px) 
 {
@@ -932,7 +957,12 @@ nav
     border-top: solid transparent 2px;
     border-bottom: solid transparent 2px;
 }
-nav a:hover
+.navhebergements:hover
+{
+    border-top: transparent 2px solid;
+    border-bottom: #0065fc 2px solid; 
+}
+.navactivites:hover
 {
     border-top: transparent 2px solid;
     border-bottom: #0065fc 2px solid;
@@ -945,12 +975,14 @@ nav a:hover
 }
 #logo
 {
-    margin-left: 25px;
+    position: absolute;
+    left: 25px;
 }
 .fa-ul
 {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0px;
 }
 #hebergements
 {
@@ -978,8 +1010,9 @@ nav a:hover
 }
 .cartepopulaires
 {
-    margin-left: 10px;
+    margin-left: 20px;
     width: 310px;
+    margin-bottom: 20px;
     
 }
 .sousarticle
@@ -996,11 +1029,8 @@ nav a:hover
 {
     display:block;
 }
-.fa-ul
-{
-    
-    margin-left: 0px;
-}
+
+
 .li
 {
     margin-left: 0px;
@@ -1030,13 +1060,25 @@ nav a:hover
 {
     width: 45%;
 }
-.iconpopulaire
+
+footer ul
 {
-    padding-left: 280px;
+width: 100%;
+padding-left: 0px ;
+font-size: 14px;
+}
+.foot
+{
+    width: 100%;
 }
 
 }
 @media screen and (max-width: 800px){
+    #localisation
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     .rechercher
     {
         display: none;
@@ -1044,6 +1086,11 @@ nav a:hover
     .fa-search
     {
         display: initial;
+    }
+    #bouton
+    {
+        border-radius: 15px 15px 15px 15px;
+        margin-left: -10px;
     }
     #textrecherche
     {
@@ -1056,14 +1103,21 @@ nav a:hover
         padding-right: 0;
         padding-left: 0;
         border-radius: initial;
+        margin-bottom: 0px;
+    }
+    .iconpopulaire
+
+    {
+        margin-right: 30px;
     }
     #hebergements
     {
         background-color: white;
+        padding: 0;
     }
-    .iconpopulaire
+    .titrepopulaire
     {
-        padding-left: 150px;
+        margin-left: 30px;
     }
     .carte
     {
@@ -1133,6 +1187,7 @@ nav a:hover
     {
         display: block;
         height: 100%;
+        margin-top: 0px;
     }
     #sousactivites
     {
@@ -1159,3 +1214,135 @@ nav a:hover
 
     
 }
+@media screen and (max-width:700px) {
+    #hebergements
+    {
+        width: 100%;
+    
+    }
+    .cartepopulaires
+    {
+        width: 90%;
+        margin-left: 30px;
+    }
+    .photopopulaires
+    {
+        width: 40%;
+    }
+    #lespluspopulaires
+    {
+        width: 100%;
+    }
+    .sousaside
+    {
+        width: 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #carteport
+    {
+        width: 100%;
+    }
+    #cartefort
+    {
+        width: 100%;
+    }
+    #cartefrioul
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #cartecalanque
+    {
+        width: 100%;
+    }
+    #cartenotredame
+    {
+        width: 100%;
+        
+    }
+    #cartelongchamp
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .carte
+    {
+        width: 100%;
+    }
+    footer
+    {
+        display: block;
+    }
+    
+}
+/* ****************smartphone****************** */
+
+@media screen and (max-width:450px) {
+    #textrecherche
+    {
+        width: 100%;
+        padding-right: 0px;
+    }
+    #localisation{
+        margin-right: 20px;
+    }
+    #logoinfo
+    {
+        width: 30px;
+    }
+    .cartepopulaires
+    {
+        width: 80%;
+    }
+    #titre2
+    {
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+    #titrefiltre
+    {
+        font-size: 18px;
+    }
+    #p2
+    {
+        font-size: 15px;
+    }
+    .etoilespopulaires
+    {
+        margin-top: 40px;
+    }
+    .cartepopulaires
+    {
+        height: 150px;
+    }
+    .carte
+    {
+        height: 190px;
+    }
+    .photo
+    {
+        height: 110px;
+    }
+    .tarif
+    {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .textphotohebergement
+    {
+        height: 80px;
+    }
+    .photo1,.photo2,.photo3,.photo4,.photo5, .photo6
+    {
+        height: 150px;
+    }
+    #carteport,  #cartefort,  #cartefrioul, #cartecalanque, #cartenotredame, #cartelongchamp
+    {
+        height: 200px;
+    }
+    
+    
+
+    }
